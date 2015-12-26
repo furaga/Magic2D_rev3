@@ -1158,5 +1158,10 @@ namespace Magic2D
             compositionCanvas.Invalidate();
         }
 
+        private void exportEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

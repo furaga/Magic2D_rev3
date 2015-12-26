@@ -312,6 +312,7 @@
             this.exportEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.exportEToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.exportEToolStripMenuItem.Text = "Export(&E)";
+            this.exportEToolStripMenuItem.Click += new System.EventHandler(this.exportEToolStripMenuItem_Click);
             // 
             // tabControl
             // 
@@ -437,7 +438,7 @@
             this.tabSkeletonFitting.Location = new System.Drawing.Point(4, 29);
             this.tabSkeletonFitting.Name = "tabSkeletonFitting";
             this.tabSkeletonFitting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSkeletonFitting.Size = new System.Drawing.Size(809, 555);
+            this.tabSkeletonFitting.Size = new System.Drawing.Size(809, 557);
             this.tabSkeletonFitting.TabIndex = 1;
             this.tabSkeletonFitting.Text = "Skeleton Fitting";
             this.tabSkeletonFitting.UseVisualStyleBackColor = true;
@@ -452,7 +453,7 @@
             // skeletonSplitContainer.Panel2
             // 
             this.skeletonSplitContainer.Panel2.Controls.Add(this.splitContainer4);
-            this.skeletonSplitContainer.Size = new System.Drawing.Size(803, 549);
+            this.skeletonSplitContainer.Size = new System.Drawing.Size(803, 551);
             this.skeletonSplitContainer.SplitterDistance = 187;
             this.skeletonSplitContainer.TabIndex = 1;
             // 
@@ -469,7 +470,7 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer4.Size = new System.Drawing.Size(612, 549);
+            this.splitContainer4.Size = new System.Drawing.Size(612, 551);
             this.splitContainer4.SplitterDistance = 398;
             this.splitContainer4.TabIndex = 0;
             // 
@@ -478,7 +479,7 @@
             this.skeletonFittingCanvas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skeletonFittingCanvas.Location = new System.Drawing.Point(0, 0);
             this.skeletonFittingCanvas.Name = "skeletonFittingCanvas";
-            this.skeletonFittingCanvas.Size = new System.Drawing.Size(398, 549);
+            this.skeletonFittingCanvas.Size = new System.Drawing.Size(398, 551);
             this.skeletonFittingCanvas.TabIndex = 0;
             this.skeletonFittingCanvas.TabStop = false;
             this.skeletonFittingCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.skeletonFittingCanvas_Paint);
@@ -507,7 +508,7 @@
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.splitContainer7);
-            this.splitContainer6.Size = new System.Drawing.Size(210, 549);
+            this.splitContainer6.Size = new System.Drawing.Size(210, 551);
             this.splitContainer6.SplitterDistance = 134;
             this.splitContainer6.TabIndex = 6;
             // 
@@ -595,8 +596,8 @@
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.editRefJointsButton);
-            this.splitContainer7.Size = new System.Drawing.Size(210, 411);
-            this.splitContainer7.SplitterDistance = 370;
+            this.splitContainer7.Size = new System.Drawing.Size(210, 413);
+            this.splitContainer7.SplitterDistance = 372;
             this.splitContainer7.TabIndex = 6;
             // 
             // refSkeletonCanvas
@@ -608,7 +609,7 @@
             this.refSkeletonCanvas.InitialImage = null;
             this.refSkeletonCanvas.Location = new System.Drawing.Point(0, 0);
             this.refSkeletonCanvas.Name = "refSkeletonCanvas";
-            this.refSkeletonCanvas.Size = new System.Drawing.Size(210, 370);
+            this.refSkeletonCanvas.Size = new System.Drawing.Size(210, 372);
             this.refSkeletonCanvas.TabIndex = 2;
             this.refSkeletonCanvas.TabStop = false;
             this.refSkeletonCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.refSkeletonCanvas_Paint);
@@ -631,7 +632,7 @@
             this.tabSegmentation.Location = new System.Drawing.Point(4, 29);
             this.tabSegmentation.Name = "tabSegmentation";
             this.tabSegmentation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSegmentation.Size = new System.Drawing.Size(809, 555);
+            this.tabSegmentation.Size = new System.Drawing.Size(809, 557);
             this.tabSegmentation.TabIndex = 2;
             this.tabSegmentation.Text = "Segmentation";
             this.tabSegmentation.UseVisualStyleBackColor = true;
@@ -646,7 +647,7 @@
             // segmentSplitContainer.Panel2
             // 
             this.segmentSplitContainer.Panel2.Controls.Add(this.splitContainer2);
-            this.segmentSplitContainer.Size = new System.Drawing.Size(803, 549);
+            this.segmentSplitContainer.Size = new System.Drawing.Size(803, 551);
             this.segmentSplitContainer.SplitterDistance = 188;
             this.segmentSplitContainer.TabIndex = 2;
             // 
@@ -664,7 +665,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Size = new System.Drawing.Size(611, 549);
+            this.splitContainer2.Size = new System.Drawing.Size(611, 551);
             this.splitContainer2.SplitterDistance = 370;
             this.splitContainer2.TabIndex = 1;
             // 
@@ -673,7 +674,7 @@
             this.segmentCanvas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.segmentCanvas.Location = new System.Drawing.Point(0, 0);
             this.segmentCanvas.Name = "segmentCanvas";
-            this.segmentCanvas.Size = new System.Drawing.Size(370, 549);
+            this.segmentCanvas.Size = new System.Drawing.Size(370, 551);
             this.segmentCanvas.TabIndex = 0;
             this.segmentCanvas.TabStop = false;
             this.segmentCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.segmentCanvas_Paint);
@@ -703,8 +704,8 @@
             this.splitContainer3.Panel2.Controls.Add(this.button2);
             this.splitContainer3.Panel2.Controls.Add(this.button1);
             this.splitContainer3.Panel2.Controls.Add(this.panel1);
-            this.splitContainer3.Size = new System.Drawing.Size(237, 549);
-            this.splitContainer3.SplitterDistance = 212;
+            this.splitContainer3.Size = new System.Drawing.Size(237, 551);
+            this.splitContainer3.SplitterDistance = 214;
             this.splitContainer3.TabIndex = 0;
             // 
             // segmentListView
@@ -758,7 +759,7 @@
             treeNode6,
             treeNode12,
             treeNode14});
-            this.segmentListView.Size = new System.Drawing.Size(237, 212);
+            this.segmentListView.Size = new System.Drawing.Size(237, 214);
             this.segmentListView.TabIndex = 0;
             this.segmentListView.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.segmentListView_AfterCheck);
             this.segmentListView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.segmentListView_AfterSelect);
@@ -915,7 +916,7 @@
             this.tabComposition.Location = new System.Drawing.Point(4, 29);
             this.tabComposition.Name = "tabComposition";
             this.tabComposition.Padding = new System.Windows.Forms.Padding(3);
-            this.tabComposition.Size = new System.Drawing.Size(809, 555);
+            this.tabComposition.Size = new System.Drawing.Size(809, 557);
             this.tabComposition.TabIndex = 3;
             this.tabComposition.Text = "Composition";
             this.tabComposition.UseVisualStyleBackColor = true;
@@ -953,7 +954,7 @@
             this.splitContainer5.Panel2.Controls.Add(this.rotTrackbar);
             this.splitContainer5.Panel2.Controls.Add(this.label2);
             this.splitContainer5.Panel2.Controls.Add(this.posXTrackbar);
-            this.splitContainer5.Size = new System.Drawing.Size(803, 549);
+            this.splitContainer5.Size = new System.Drawing.Size(803, 551);
             this.splitContainer5.SplitterDistance = 514;
             this.splitContainer5.TabIndex = 0;
             // 
@@ -971,7 +972,7 @@
             // splitContainer10.Panel2
             // 
             this.splitContainer10.Panel2.Controls.Add(this.compositionCanvas);
-            this.splitContainer10.Size = new System.Drawing.Size(514, 549);
+            this.splitContainer10.Size = new System.Drawing.Size(514, 551);
             this.splitContainer10.SplitterDistance = 171;
             this.splitContainer10.TabIndex = 0;
             // 
@@ -990,8 +991,8 @@
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.loadSegmentImageButton);
-            this.splitContainer8.Size = new System.Drawing.Size(171, 549);
-            this.splitContainer8.SplitterDistance = 511;
+            this.splitContainer8.Size = new System.Drawing.Size(171, 551);
+            this.splitContainer8.SplitterDistance = 513;
             this.splitContainer8.TabIndex = 0;
             // 
             // segmentImageView
@@ -1000,7 +1001,7 @@
             this.segmentImageView.LargeImageList = this.segmentImageList;
             this.segmentImageView.Location = new System.Drawing.Point(0, 0);
             this.segmentImageView.Name = "segmentImageView";
-            this.segmentImageView.Size = new System.Drawing.Size(171, 511);
+            this.segmentImageView.Size = new System.Drawing.Size(171, 513);
             this.segmentImageView.SmallImageList = this.segmentImageList;
             this.segmentImageView.TabIndex = 0;
             this.segmentImageView.UseCompatibleStateImageBehavior = false;
@@ -1026,7 +1027,7 @@
             this.compositionCanvas.Location = new System.Drawing.Point(0, 0);
             this.compositionCanvas.Name = "compositionCanvas";
             this.compositionCanvas.Resolution = new System.Drawing.Size(1600, 1200);
-            this.compositionCanvas.Size = new System.Drawing.Size(339, 549);
+            this.compositionCanvas.Size = new System.Drawing.Size(339, 551);
             this.compositionCanvas.TabIndex = 1;
             this.compositionCanvas.Text = "compositionCanvasControl1";
             this.compositionCanvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.compositionCanvas_MouseDown);

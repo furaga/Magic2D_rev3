@@ -71,7 +71,6 @@
   <ItemGroup>
     <Compile Include="Math\DelaunayTriangle.cs" />
     <Compile Include="Math\TriangleNET.cs" />
-    <Compile Include="SimpleParser\SimpleParser.cs" />
     <Compile Include="UI\Hooker.cs" />
     <Compile Include="UI\TakeScreenshotForm.cs">
       <SubType>Form</SubType>
