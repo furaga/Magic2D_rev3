@@ -1,0 +1,57 @@
+SegmentRoot:root0
+PathSegment:Full
+offset:0,0
+closed:False
+path:
+section:
+partingLine:
+PathSegment:0
+offset:10,20
+closed:True
+path:100,100 10,10
+section:100,10 100,100 10,10
+partingLine:50,50 100,50 100,100 50,50
+PathSegment:1
+offset:10,20
+closed:True
+path:100,100 10,10
+section:100,10 100,100 10,10
+partingLine:50,50 100,50 100,100 50,50
+SegmentRoot:root1
+PathSegment:Full
+offset:0,0
+closed:False
+path:
+section:
+partingLine:
+PathSegment:0
+offset:10,20
+closed:True
+path:100,100 10,10
+section:100,10 100,100 10,10
+partingLine:50,50 100,50 100,100 50,50
+PathSegment:1
+offset:10,20
+closed:True
+path:100,100 10,10
+section:100,10 100,100 10,10
+partingLine:50,50 100,50 100,100 50,50
+SegmentRoot:root2
+PathSegment:Full
+offset:0,0
+closed:False
+path:
+section:
+partingLine:
+PathSegment:0
+offset:10,20
+closed:True
+path:100,100 10,10
+section:100,10 100,100 10,10
+partingLine:50,50 100,50 100,100 50,50
+PathSegment:1
+offset:10,20
+closed:True
+path:100,100 10,10
+section:100,10 100,100 10,10
+partingLine:50,50 100,50 100,100 50,50
