@@ -388,6 +388,10 @@ namespace Magic2D
 
         private void refSkeletonCanvas_MouseMove(object sender, MouseEventArgs e)
         {
+            if (refSkeletonAnnotation == null)
+            {
+                return;
+            }
             refSkeletonNearestJoint = refSkeletonAnnotation.GetNearestJoint(e.Location, 20, refSkeletonCanvasTransform);
             refSkeletonCanvas.Invalidate();
         }
