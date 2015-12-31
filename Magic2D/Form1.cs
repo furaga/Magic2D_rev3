@@ -32,7 +32,7 @@ namespace Magic2D
 
             // for debug
             //            OpenProject("../../../Test/dummyProject.m2d");
-            OpenProject("../../../../Patchwork_resources/GJ_ED3/GJ_ED3.m2d");
+            // OpenProject("../../../../Patchwork_resources/GJ_ED3/GJ_ED3.m2d");
             refSkeletonAnnotation = OpenRefSkeleton("../../../Test/refSkeleton.skl", refSkeletonCanvas.Image as Bitmap);
 
 

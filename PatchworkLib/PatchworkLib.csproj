@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF4E2902-FA7C-4ABE-AC88-F7BCB4284DBA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatchworkLib</RootNamespace>
+    <AssemblyName>PatchworkLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX, Version=2.6.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Magic2D_rev2\SharpDXTest\MyGame1\MyGame1\bin\Debug\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=2.6.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Magic2D_rev2\SharpDXTest\MyGame1\MyGame1\bin\Debug\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=2.6.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Magic2D_rev2\SharpDXTest\MyGame1\MyGame1\bin\Debug\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.6.2.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Magic2D_rev2\SharpDXTest\MyGame1\MyGame1\bin\Debug\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ARAPDeformation\ARAPDeformation.cs" />
+    <Compile Include="Magic2DAdopters\PathSubdivision.cs" />
+    <Compile Include="Magic2DAdopters\SegmentLoader.cs" />
+    <Compile Include="Magic2DAdopters\SegmentToPatch.cs" />
+    <Compile Include="Magic2DAdopters\SkeletonAnnotation.cs" />
+    <Compile Include="Magic2DAdopters\Segmentation.cs" />
+    <Compile Include="Magic2DAdopters\SplineInterpolator.cs" />
+    <Compile Include="PatchMesh\Connectors\PatchConnector2.cs" />
+    <Compile Include="PatchMesh\SkeletalMesh\PatchControlPoint.cs" />
+    <Compile Include="PatchMesh\SkeletalMesh\PatchMesh.cs" />
+    <Compile Include="PatchMesh\Colliders\PatchMeshCollision.cs" />
+    <Compile Include="PatchMesh\Renderers\PatchMeshRenderer.cs" />
+    <Compile Include="PatchMesh\Renderers\PatchMeshRenderResources.cs" />
+    <Compile Include="PatchMesh\SkeletalMesh\PatchSkeletalMesh.cs" />
+    <Compile Include="PatchMesh\Renderers\PatchSkeletalMeshRenderer.cs" />
+    <Compile Include="PatchMesh\SkeletalMesh\PatchSkeleton.cs" />
+    <Compile Include="PatchMesh\Movers\PatchSkeletonFitting.cs" />
+    <Compile Include="PatchMesh\Movers\PatchSkeletonFKMover.cs" />
+    <Compile Include="PatchMesh\SkeletalMesh\PatchTriangle.cs" />
+    <Compile Include="PatchMesh\SkeletalMesh\PatchVertex.cs" />
+    <Compile Include="PatchMesh\Connectors\PatchConnector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FLib\FLib2013\FLib\FLib.SharpDX\FLib.SharpDX.csproj">
+      <Project>{4c5c40b0-4ef0-477e-be70-a8fb789e4644}</Project>
+      <Name>FLib.SharpDX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FLib\FLib2013\FLib\FLib\FLib.csproj">
+      <Project>{6d0669a0-6a26-424b-86b7-e77dff6b6afb}</Project>
+      <Name>FLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
